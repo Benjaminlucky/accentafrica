@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/home/Home";
 import MainNav from "./components/mainnav/MainNav";
 import { Helmet } from "react-helmet";
+import Footer from "./components/footer/Footer";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home/>} />
           </Routes>
+          <Footer />
         </Router>
     </div>
   );
